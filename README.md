@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Calculator App
-A simple app that displays a calculator using React.
+# Math Magicians
+A simple app that displays a calculator using React in a SPA. It takes advantage of the component capabilities that React offers.
 
 
 ## Built With
@@ -34,7 +34,7 @@ A simple app that displays a calculator using React.
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues](https://github.com/anagudelogu/capstone-two/issues) page.
+Feel free to check the [issues](https://github.com/Danie12345/mathemagics/issues) page.
 
 
 ## Show your support
