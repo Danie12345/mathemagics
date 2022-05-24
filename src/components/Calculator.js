@@ -5,6 +5,8 @@ class Calculator extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
+    this.appliers = ['AC', '+/-', '%'];
+    this.operators = ['/', '*', '-', '+'];
   }
 
   render() {
@@ -13,19 +15,18 @@ class Calculator extends React.Component {
         <div className="result"> </div>
         <div className="operands">
           <div className="appliers">
-            <button className="button" type="button">AC</button>
-            <button className="button" type="button">+/-</button>
-            <button className="button" type="button">%</button>
+            {this.appliers.map((el) => <button key={el} className="button" type="button">{el}</button>)}
           </div>
         </div>
         <div>
-          {Array(9).fill(1).map((el, i) => <button key={el} className="button" type="button">{i + 1}</button>)}
+          {[...Array(9).keys()].map((i) => <button key={i} className="button" type="button">{i + 1}</button>)}
+          <div>
+            <button className="button" type="button wide-btn">0</button>
+            <button className="button" type="button">.</button>
+          </div>
         </div>
         <div className="operators" type="button">
-          <button className="button" type="button">/</button>
-          <button className="button" type="button">*</button>
-          <button className="button" type="button">-</button>
-          <button className="button" type="button">+</button>
+          {this.operators.map((el) => <button key={el} className="button" type="button">{el}</button>)}
           <button className="button" type="button">=</button>
         </div>
       </div>
