@@ -21,7 +21,7 @@ class Calculator extends React.Component {
         <div>
           {[...Array(9).keys()].map((i) => <button key={i} className="button" type="button">{i + 1}</button>)}
           <div>
-            <button className="button" type="button wide-btn">0</button>
+            <button className="button x2" type="button">0</button>
             <button className="button" type="button">.</button>
           </div>
         </div>
