@@ -1,0 +1,98 @@
+:root {
+  --box-height: 40px;
+  --box-width: 50px;
+  --box-font-fam: 'Arial', sans-serif;
+  --result-bg-color: rgb(61, 61, 61);
+  --light-bg-color: rgb(216, 213, 213);
+  --orange-bg-color: rgb(255, 140, 64);
+}
+
+.calculator {
+  width: fit-content;
+  height: auto;
+  background-color: var(--white-bg-color);
+  font-family: var(--box-font);
+  display: flex;
+  flex-direction: column;
+}
+
+.result {
+  background-color: var(--result-bg-color);
+  width: calc(4 * var(--box-width));
+  height: var(--box-height);
+  color: var(--light-bg-color);
+  font-size: 24px;
+  text-align: end;
+  vertical-align: middle;
+  line-height: var(--box-height);
+  padding-right: 4px;
+  box-sizing: border-box;
+}
+
+.sections {
+  display: flex;
+  width: fit-content;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  background-color: var(--light-bg-color);
+}
+
+.right {
+  display: flex;
+  width: auto;
+  background-color: var(--orange-bg-color);
+}
+
+.appliers {
+  display: flex;
+  background-color: inherit;
+}
+
+.operands {
+  display: flex;
+  flex-direction: column;
+  background-color: inherit;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+  width: calc(3 * var(--box-width));
+  background-color: inherit;
+}
+
+.pivots {
+  display: flex;
+  background-color: inherit;
+}
+
+.operators {
+  display: flex;
+  flex-direction: column;
+  background-color: inherit;
+}
+
+.button {
+  width: var(--box-width);
+  height: var(--box-height);
+  border: none;
+  background-color: inherit;
+}
+
+.button:hover {
+  filter: brightness(90%);
+}
+
+.x2 {
+  width: calc(2 * var(--box-width));
+}
+
+.y2 {
+  height: calc(2 * var(--box-height));
+}
