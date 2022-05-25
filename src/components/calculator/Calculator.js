@@ -11,8 +11,6 @@ class Calculator extends React.Component {
       next: null,
     };
     this.calculate = this.calculate.bind(this);
-    this.handleClick = this.handleClick.bind(this);
-    this.handleKeyDown = this.handleKeyDown.bind(this);
     this.appliers = ['AC', '+/-', '%'];
     this.operators = ['÷', '\u00d7', '-', '+', '='];
   }
@@ -30,7 +28,7 @@ class Calculator extends React.Component {
     this.calculate(btnName);
   };
 
-  calculate(btnName) {
+  calculate = (btnName) => {
     this.setState((state) => calculate(state, btnName));
   }
 
