@@ -6,7 +6,7 @@ class Calculator extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      total: 0,
+      total: null,
       operator: null,
       next: null,
     };
@@ -17,7 +17,6 @@ class Calculator extends React.Component {
   }
 
   handleClick = (e) => {
-    console.log(e);
     this.setState((state) => calculate(state, e.target.innerHTML));
   };
 
