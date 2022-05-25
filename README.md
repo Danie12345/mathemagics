@@ -10,7 +10,7 @@ A simple app that displays a calculator using React in a SPA. It takes advantage
 - Gitflow
 
 ## Live Demo
-- [Demo](https://anagudelogu.github.io/mathemagics/)
+- [Demo](https://Danie12345.github.io/mathemagics)
 
 
 ## Getting Started
