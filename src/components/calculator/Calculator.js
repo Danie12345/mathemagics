@@ -22,9 +22,10 @@ class Calculator extends React.Component {
   };
 
   handleKeyDown = (e) => {
-    let btnName = String.fromCharCode(e.keyCode);
-    if ('+-/*'.includes(e.keyCode)) btnName = e.keyCode;
-    else if (!'0123456789'.includes(btnName)) return;
+    let btnName = e.key;
+    if (!'.0123456789+-*/%='.includes(btnName)) return;
+    if (btnName === '*') btnName = '\u00d7';
+    if (btnName === '/') btnName = '÷';
     this.calculate(btnName);
   };
 
