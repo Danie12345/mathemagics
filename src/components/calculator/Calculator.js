@@ -23,9 +23,10 @@ class Calculator extends React.Component {
 
   handleKeyDown = (e) => {
     let btnName = e.key;
-    if (!'.0123456789+-*/%='.includes(btnName)) return;
+    if (!'.0123456789+-*/%=ac'.includes(btnName)) return;
     if (btnName === '*') btnName = '\u00d7';
     if (btnName === '/') btnName = '÷';
+    if ('ac'.includes(btnName)) btnName = 'AC';
     this.calculate(btnName);
   };
 
