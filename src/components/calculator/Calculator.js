@@ -34,12 +34,16 @@ class Calculator extends React.Component {
 
   render() {
     const { total, operation, next } = this.state;
+    let pipedTotal;
+    let pipedNext;
+    if (total) pipedTotal = total.toString().substring(0, 8);
+    if (next) pipedNext = next.toString().substring(0, 8);
     return (
       <div className="calculator">
         <div className="result">
-          { total }
+          { pipedTotal }
           { operation }
-          { next }
+          { pipedNext }
         </div>
         <div className="sections">
           <div className="left">
