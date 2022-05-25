@@ -6,7 +6,7 @@ class Calculator extends React.Component {
     super(props);
     this.state = {};
     this.appliers = ['AC', '+/-', '%'];
-    this.operators = ['÷', '×', '-', '+'];
+    this.operators = ['÷', '\u00d7', '-', '+'];
   }
 
   render() {

@@ -9,7 +9,7 @@ export default function operate(numberOne, numberTwo, operation) {
   if (operation === '-') {
     return one.minus(two).toString();
   }
-  if (operation === 'x') {
+  if (operation === '\u00d7') {
     return one.times(two).toString();
   }
   if (operation === '÷') {
