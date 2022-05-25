@@ -7,9 +7,10 @@ class Calculator extends React.Component {
     super(props);
     this.state = {
       total: null,
-      operator: null,
+      operation: null,
       next: null,
     };
+    this.calculate = this.calculate.bind(this);
     this.handleClick = this.handleClick.bind(this);
     this.handleKeyDown = this.handleKeyDown.bind(this);
     this.appliers = ['AC', '+/-', '%'];
@@ -17,23 +18,27 @@ class Calculator extends React.Component {
   }
 
   handleClick = (e) => {
-    this.setState((state) => calculate(state, e.target.innerHTML));
+    this.calculate(e.target.innerHTML);
   };
 
   handleKeyDown = (e) => {
-    if (e.keyCode === e.target.innerHTML) {
-      console.log(e.keyCode);
-      this.handleClick(e);
-    }
+    let btnName = String.fromCharCode(e.keyCode);
+    if ('+-/*'.includes(e.keyCode)) btnName = e.keyCode;
+    else if (!'0123456789'.includes(btnName)) return;
+    this.calculate(btnName);
   };
 
+  calculate(btnName) {
+    this.setState((state) => calculate(state, btnName));
+  }
+
   render() {
-    const { total, operator, next } = this.state;
+    const { total, operation, next } = this.state;
     return (
       <div className="calculator">
         <div className="result">
           { total }
-          { operator }
+          { operation }
           { next }
         </div>
         <div className="sections">
