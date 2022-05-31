@@ -1,7 +1,7 @@
 import React from 'react';
 import Calculator from '../calculator/Calculator';
 
-const Home = () => {
+const CalculatorSection = () => {
   return (
     <div className='calculatorSection'>
       <p>Let's do some nerdy maths!</p>
@@ -10,4 +10,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default CalculatorSection;
