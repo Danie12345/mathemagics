@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import Calculator from './components/calculator/Calculator';
+import { Router } from 'react-router-dom';
+import Container from './components/container/Container';
 
 class App extends React.Component {
   constructor() {
@@ -10,7 +11,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <Calculator />
+      <React.StrictMode>
+        <Router basename={process.env.PUBLIC_URL}>
+          <Container />
+        </Router>
+      </React.StrictMode>
     );
   }
 }
