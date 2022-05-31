@@ -2,7 +2,7 @@ import React from 'react';
 import Calculator from '../calculator/Calculator';
 
 const CalculatorSection = () => (
-  <div className="calculatorSection">
+  <div className="section calculatorSection">
     <p>Use the very awesome calculator!</p>
     <Calculator />
   </div>

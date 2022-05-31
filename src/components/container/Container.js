@@ -7,6 +7,8 @@ import Home from '../home/Home';
 import CalculatorSection from '../calculator-section/CalculatorSection';
 import Quote from '../quote/Quote';
 
+import './Container.css';
+
 const Container = () => (
   <>
     <Nav />
