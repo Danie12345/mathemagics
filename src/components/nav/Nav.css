@@ -21,7 +21,6 @@ h1 {
 ul {
   margin: 0%;
   padding: 0%;
-  height: fit-content;
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -29,11 +28,11 @@ ul {
   flex-wrap: wrap;
 }
 
+li {
+  height: auto;
+}
+
 ul > li:nth-child(-n+2) {
   border-right: 1px solid black;
   padding-right: 8px;
-}
-
-li {
-  height: auto;
 }
