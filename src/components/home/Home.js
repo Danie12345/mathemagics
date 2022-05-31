@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => (
   <div>
-    <h1>Mathemagics</h1>
+    <h2>Welcome to the Mathemagics website!</h2>
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, in! Officia ex, corrupti
       error nemo doloribus labore ratione repudiandae laboriosam repellat neque asperiores, sint eos
