@@ -1,7 +1,9 @@
 import React from 'react';
 
+import './Home.css';
+
 const Home = () => (
-  <div>
+  <div className="homeContainer">
     <h2>Welcome to the Mathemagics website!</h2>
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, in! Officia ex, corrupti

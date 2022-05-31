@@ -1,0 +1,20 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 0% 10%;
+  gap: 24px;
+}
+
+h2 {
+  margin: 0%;
+}
+
+p {
+  margin: 0%;
+  border: 1px solid rgba(128, 128, 128, 0.527);
+  box-sizing: border-box;
+  padding: 4px;
+  background-color: rgb(236, 250, 248);
+}
