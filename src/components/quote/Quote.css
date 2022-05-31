@@ -6,7 +6,8 @@
 .quote {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  align-self: center;
+  width: 60%;
   height: auto;
   gap: 8px;
   margin: 0%;
