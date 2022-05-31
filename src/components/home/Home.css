@@ -5,11 +5,11 @@
   gap: 24px;
 }
 
-h2 {
+h2.title {
   margin: 0%;
 }
 
-p {
+p.introduction {
   margin: 0%;
   border: 1px solid rgba(128, 128, 128, 0.527);
   box-sizing: border-box;
