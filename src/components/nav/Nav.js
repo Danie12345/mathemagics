@@ -5,17 +5,17 @@ const Nav = () => {
   const links = [
     {
       id: 1,
-      path: '/home',
+      path: 'home',
       text: 'Home',
     },
     {
       id: 2,
-      path: '/calculator',
+      path: 'calculator',
       text: 'Calculator',
     },
     {
       id: 3,
-      path: '/quote',
+      path: 'quote',
       text: 'Quote',
     },
   ];
@@ -25,7 +25,7 @@ const Nav = () => {
       <ul>
         {links.map((link) => (
           <li key={link.id}>
-            <NavLink to={link.path} activeClassName="active-link" exact>
+            <NavLink to={link.path}>
               {link.text}
             </NavLink>
           </li>
