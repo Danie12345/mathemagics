@@ -1,0 +1,14 @@
+.calculatorSection {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  gap: 15%;
+  justify-content: center;
+}
+
+p.description {
+  margin: 0%;
+  height: fit-content;
+  align-self: flex-start;
+  font-weight: 600;
+}
