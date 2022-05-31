@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
-  gap: 15%;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 15%;
 }
 
 p.description {
@@ -11,4 +12,11 @@ p.description {
   height: fit-content;
   align-self: flex-start;
   font-weight: 600;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+.calculator {
+  box-sizing: border-box;
+  padding: 8px;
 }
