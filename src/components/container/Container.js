@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Routes, Route, Navigate } from 'react-router-dom';
+
 import Nav from '../nav/Nav';
 import Home from '../home/Home';
 import CalculatorSection from '../calculator-section/CalculatorSection';
