@@ -24,6 +24,7 @@ ul {
   flex-direction: row;
   gap: 8px;
   align-self: center;
+  flex-wrap: wrap;
 }
 
 ul > li:nth-child(-n+2) {
