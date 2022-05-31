@@ -1,0 +1,6 @@
+.navBar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+}
