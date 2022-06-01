@@ -4,7 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 
 const Nav = require('../components/nav/Nav').default;
 
-test('loads the container with everything', () => {
-  const tree = renderer.create(<BrowserRouter><Nav /></BrowserRouter>).toJSON();
+test('loads the nav with everything', () => {
+  const components = <BrowserRouter><Nav /></BrowserRouter>;
+  const tree = renderer.create(components).toJSON();
   expect(tree).toMatchSnapshot();
 });

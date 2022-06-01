@@ -3,7 +3,7 @@ import '@testing-library/jest-dom';
 
 const Home = require('../components/home/Home').default;
 
-test('loads the container with everything', () => {
+test('loads the home with everything', () => {
   const tree = renderer.create(<Home />).toJSON();
   expect(tree).toMatchSnapshot();
 });
