@@ -1,0 +1,21 @@
+.calculatorSection {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15%;
+}
+
+p.description {
+  margin: 0%;
+  align-self: flex-start;
+  font-weight: 600;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+.calculator {
+  box-sizing: border-box;
+  padding: 8px;
+}

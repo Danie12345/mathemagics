@@ -14,13 +14,16 @@ A simple app that displays a calculator using React in a SPA. It takes advantage
 
 
 ## Getting Started
+
 > To get a local copy up and running follow these simple example steps.
 
-- Clone the repo with this link https://github.com/Danie12345/mathemagics.git
-
-- Create a branch to work on your features
-
-- Make a pull request with your changes once you're done
+- copy this link `https://github.com/danie12345/mathemagics`.
+- get the directory that you want to clone the repository.
+- open the command prompt in this directory.
+- write `git clone https://github.com/danie12345/mathemagics`.
+- go to the repository folder in your command prompt `cd mathemagics`.
+- run `npm install` to install packages.
+- run `npm start` to run the app.
 
 
 ## Author: Daniel Malo
